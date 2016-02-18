@@ -49,6 +49,7 @@ DSTROOT		=	$(DESTDIR)
 
 install-data-hook:
 	$(LN_S) $(BUILDROOT)/usr/include $(BUILDROOT)/usr/include/json-c
+	$(LN_S) $(BUILDROOT)/usr/include $(BUILDROOT)/usr/include/json
 	$(RM) $(BUILDROOT)/usr/lib/libjson-c.la
 
 distclean-local:
